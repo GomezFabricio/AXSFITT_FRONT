@@ -1,0 +1,75 @@
+.registrar-venta-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.agregar-producto-button,
+.finalizar-venta-button,
+.continuar-button,
+.pago-button {
+    background-color: var(--color-principal) !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.agregar-producto-button:hover,
+.finalizar-venta-button:hover,
+.continuar-button:hover,
+.pago-button:hover {
+    background-color: var(--color-principal-hover) !important;
+}
+
+.carrito-ventas {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.carrito-ventas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carrito-ventas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.eliminar-producto-button {
+    background-color: #dc3545 !important;
+    color: white !important;
+    border: none !important;
+    padding: 5px 10px !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+}
+
+.eliminar-producto-button:hover {
+    background-color: #c82333 !important;
+}
+
+.confirmation-buttons {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.payment-options {
+    display: flex;
+    gap: 10px;
+}

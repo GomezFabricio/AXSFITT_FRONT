@@ -1,0 +1,42 @@
+.formulario-rol {
+    margin: 20px 0;
+}
+
+.formulario-rol label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.roles-select {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.roles-select option {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.anterior-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.anterior-button:hover {
+    background-color: #0056b3;
+}

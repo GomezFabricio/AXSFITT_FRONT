@@ -1,0 +1,22 @@
+:root {
+  /* Paleta de Colores */
+  --color-principal: #9E3DA5; /* Color principal */
+  --color-principal-hover: #7b2a7d; /* Color principal oscuro */
+  --color-letras-fondo-claro: #989898; /* Gris claro */
+  --color-letras-botones: #ffffff; /* Blanco */
+
+  /* Escala Cromática */
+  --color-principal-lightest: #e9d4eb; /* Color principal muy claro */
+  --color-principal-lighter: #d3a9d7; /* Color principal claro */
+  --color-principal-light: #bd7ec3; /* Color principal más claro */
+  --color-principal-dark: #7b2a7d; /* Color principal oscuro */
+  --color-principal-darker: #5a1f5b; /* Color principal más oscuro */
+  --color-principal-darkest: #3a143a; /* Color principal muy oscuro */
+
+  /* Escala de Grises */
+  --color-gris-claro: #f5f5f5; /* Blanco humo */
+  --color-gris-medio: #cccccc; /* Gris claro */
+  --color-gris-oscuro: #7a7a7a; /* Gris medio */
+  --color-gris-mas-oscuro: #4a4a4a; /* Gris oscuro */
+  --color-gris-negro: #2a2a2a; /* Gris muy oscuro */
+}

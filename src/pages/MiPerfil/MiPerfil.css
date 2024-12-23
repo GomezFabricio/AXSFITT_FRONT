@@ -1,0 +1,54 @@
+.profile-section {
+    margin-bottom: 20px;
+}
+
+.profile-section h2 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.profile-section p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.profile-section p button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.profile-section p button:hover {
+    color: #0056b3;
+}
+
+.modal-title {
+    color: #333;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-footer button {
+    width: 100px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 0.25em;
+  }

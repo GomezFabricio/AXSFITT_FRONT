@@ -1,0 +1,49 @@
+/* Estilos comunes para los iconos de acción */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Espacio entre los botones */
+}
+
+.action-buttons button {
+    background: none; /* Hacer el fondo transparente */
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+/* Icono de editar (azul) */
+.action-buttons .edit-button i {
+    color: #007bff;
+}
+
+/* Cambiar el color del icono de editar al pasar el mouse */
+.action-buttons .edit-button:hover i {
+    color: #0056b3;
+}
+
+/* Icono de eliminar (rojo) */
+.action-buttons .delete-button i {
+    color: #dc3545;
+}
+
+/* Cambiar el color del icono de eliminar al pasar el mouse */
+.action-buttons .delete-button:hover i {
+    color: #c82333;
+}
+
+/* Icono de reingreso (verde) */
+.action-buttons .reingreso-button i {
+    color: #28a745;
+}
+
+/* Cambiar el color del icono de reingreso al pasar el mouse */
+.action-buttons .reingreso-button:hover i {
+    color: #218838;
+}
+
+/* Ajustar el tamaño de los iconos */
+.action-buttons i {
+    font-size: 1.5em; /* Tamaño consistente para los iconos */
+}

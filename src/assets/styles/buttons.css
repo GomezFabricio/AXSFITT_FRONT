@@ -1,0 +1,52 @@
+/* src/assets/styles/buttons.css */
+
+.siguiente-button, .page-anterior-button, .alta-button, .actualizar-button {
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 4px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.siguiente-button {
+  background-color: #4CAF50; /* Verde */
+}
+
+.siguiente-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.page-anterior-button {
+  background-color: #f44336; /* Rojo */
+}
+
+.page-anterior-button:hover {
+  background-color: #e53935;
+  transform: translateY(-2px);
+}
+
+.alta-button {
+  background-color: #008CBA; /* Azul */
+}
+
+.alta-button:hover {
+  background-color: #007bb5;
+  transform: translateY(-2px);
+}
+
+.actualizar-button {
+  background-color: #FFA500; /* Naranja */
+}
+
+.actualizar-button:hover {
+  background-color: #FF8C00;
+  transform: translateY(-2px);
+}

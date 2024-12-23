@@ -1,0 +1,28 @@
+.rol-card {
+    background-color: #f9f9f9; /* Fondo más claro */
+    border-radius: 8px;
+    padding: 10px 15px; /* Padding reducido */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.rol-card {
+    display: block;
+    width: calc(100% - 20px); /* Ajuste de ancho para el margen */
+    max-width: 300px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.rol-card > h2 {
+    font-weight: 400; /* Tipografía más ligera */
+    font-size: 18px; /* Tamaño de fuente reducido */
+    margin: 10px 0; /* Margen vertical */
+}
+
+.rol-card:hover {
+    background-color: var(--color-principal); /* Color de fondo al pasar el ratón */
+    color: white; /* Color de texto al pasar el ratón */
+    cursor: pointer;
+    transform: translateY(-5px); /* Efecto de elevación */
+}

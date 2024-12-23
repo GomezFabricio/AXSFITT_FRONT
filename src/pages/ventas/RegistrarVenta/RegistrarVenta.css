@@ -1,0 +1,20 @@
+.qr-modal .modal-content {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.qr-modal .modal-header {
+    border-bottom: none;
+}
+
+.qr-modal .modal-footer {
+    border-top: none;
+    justify-content: center;
+}
+
+.qr-modal .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

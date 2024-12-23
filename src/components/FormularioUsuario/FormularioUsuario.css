@@ -1,0 +1,15 @@
+.titulo-formulario {
+    margin: 20px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group > label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--color-letras-fondo-claro);
+}
