@@ -1,10 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../../assets/styles/forms.css';
 import './FormularioPersona.css';
 
 const FormularioPersona = ({ handleChange, values, errors, touched, handleBlur }) => {
+    const navigate = useNavigate();
+
+    const handleBack = (e) => {
+        e.preventDefault();
+        navigate(-1);
+    };
+
     return (
         <div className="formulario-persona">
+
             {/* Fila para Nombre y Apellido */}
             <div className="form-row">
                 <div className="form-group">
@@ -77,6 +86,9 @@ const FormularioPersona = ({ handleChange, values, errors, touched, handleBlur }
                     {touched.persona_domicilio && errors.persona_domicilio && <div className="error-message">{errors.persona_domicilio}</div>}
                 </div>
             </div>
+
+            {/* Botón de Atrás */}
+            <button onClick={handleBack} className="back-button">Atrás</button>
         </div>
     );
 }

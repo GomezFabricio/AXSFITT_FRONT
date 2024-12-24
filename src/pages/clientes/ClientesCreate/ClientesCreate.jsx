@@ -143,6 +143,7 @@ const ClientesCreate = () => {
                   values={values} 
                   errors={errors} 
                   touched={touched} 
+                  disablePassword={true} // Deshabilitar el campo de contraseña
                   readOnly // Hacer que los campos sean de solo lectura
                 />
                 <button type="button" className="page-anterior-button" onClick={handlePreviousStep}>

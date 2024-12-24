@@ -1,12 +1,7 @@
 import React from 'react';
 import './FormularioRol.css';
 
-const FormularioRol = ({ roles, selectedRoles, setSelectedRoles }) => {
-    const handleRolesChange = (e) => {
-        // Convertir las opciones seleccionadas en un array de IDs de roles
-        setSelectedRoles(Array.from(e.target.selectedOptions, (option) => parseInt(option.value)));
-    };
-
+const FormularioRol = ({ roles, selectedRoles, handleRolesChange }) => {
     return (
         <div className="formulario-rol">
             <label>Roles</label>

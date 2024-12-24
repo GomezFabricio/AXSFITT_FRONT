@@ -81,6 +81,11 @@ const UsuariosCreate = () => {
     return password;
   };
 
+  const handleRolesChange = (e, setFieldValue) => {
+    const selectedRoles = Array.from(e.target.selectedOptions, (option) => parseInt(option.value));
+    setFieldValue('roles', selectedRoles);
+  };
+
   return (
     <div className="container-page">
       <h1 className="title">Alta Usuario</h1>
@@ -116,11 +121,10 @@ const UsuariosCreate = () => {
               const usuarioData = {
                 usuario_email: values.usuario_email,
                 usuario_pass: values.usuario_pass,
-                roles: values.roles,
               };
 
               // Enviar la solicitud con ambos pasos completados
-              await createUsuarioRequest({ persona: personaData, usuario: usuarioData });
+              await createUsuarioRequest({ persona: personaData, usuario: usuarioData, roles: values.roles });
               navigate('/usuarios'); // Redirigir a la URL "/usuarios" después de finalizar el registro
             }
           } catch (error) {
@@ -152,15 +156,13 @@ const UsuariosCreate = () => {
                   values={values} 
                   errors={errors} 
                   touched={touched} 
+                  disablePassword={true} // Deshabilitar el campo de contraseña
                   readOnly // Hacer que los campos sean de solo lectura
                 />
                 <FormularioRol 
-                  handleChange={handleChange} 
-                  setFieldValue={setFieldValue} 
-                  values={values} 
-                  errors={errors} 
-                  touched={touched} 
                   roles={roles} 
+                  selectedRoles={values.roles} 
+                  handleRolesChange={(e) => handleRolesChange(e, setFieldValue)} 
                 />
                 <button type="button" className="page-anterior-button" onClick={handlePreviousStep}>
                   Anterior

@@ -101,6 +101,11 @@ const UsuarioEdit = () => {
     setStep(step - 1);
   };
 
+  const handleRolesChange = (e) => {
+    const selectedRoles = Array.from(e.target.selectedOptions, (option) => parseInt(option.value));
+    setSelectedRoles(selectedRoles);
+  };
+
   return (
     <div className="container-page">
       <h1>Modificar Usuario</h1>
@@ -175,7 +180,11 @@ const UsuarioEdit = () => {
                   disablePassword={true}
                   disableEmail={true} // Deshabilitar el campo de correo electrónico
                 />
-                <FormularioRol roles={roles} selectedRoles={selectedRoles} setSelectedRoles={setSelectedRoles} />
+                <FormularioRol 
+                  roles={roles} 
+                  selectedRoles={selectedRoles} 
+                  handleRolesChange={handleRolesChange} 
+                />
                 <button type="button" className="page-anterior-button" onClick={handlePreviousStep}>
                   Anterior
                 </button>
