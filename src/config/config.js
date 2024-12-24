@@ -1,6 +1,6 @@
 const config = {
-    backendUrl: 'http://localhost:4000', 
-    frontendUrl: 'http://localhost:5174' 
+    backendUrl: import.meta.env.VITE_BACKEND_URL,
+    frontendUrl: import.meta.env.VITE_FRONTEND_URL,
 };
 
 export default config;

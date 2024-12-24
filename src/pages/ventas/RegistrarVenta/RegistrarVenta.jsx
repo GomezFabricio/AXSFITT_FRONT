@@ -99,8 +99,8 @@ const RegistrarVenta = () => {
 
         try {
             // Datos necesarios para la API de Mercado Pago
-            const userId = '250056888'; 
-            const externalPosId = 'SUC001POS001'; 
+            const userId = import.meta.env.VITE_USER_ID;
+            const externalPosId = import.meta.env.VITE_EXTERNAL_POS_ID;
     
             // Preparar la data que se envía a la API
             const data = {
