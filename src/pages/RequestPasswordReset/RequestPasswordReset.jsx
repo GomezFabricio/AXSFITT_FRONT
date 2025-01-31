@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import config from '../../config/config';
 
 const RequestPasswordReset = () => {
     const [email, setEmail] = useState('');
@@ -11,7 +12,7 @@ const RequestPasswordReset = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('https://localhost:4000/request-password-reset', { email });
+            const response = await axios.post(`${config.backendUrl}/request-password-reset`, { email });
             setMessage(response.data.message);
         } catch (error) {
             setMessage(error.response.data.message);

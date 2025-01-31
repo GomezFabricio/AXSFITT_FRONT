@@ -5,13 +5,19 @@ import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 5174,
-    // Elimina la configuración HTTPS
-  },
   css: {
     postcss: {
       plugins: [tailwindcss, autoprefixer],
     },
   },
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom']
+        }
+      }
+    }
+  }
 });
